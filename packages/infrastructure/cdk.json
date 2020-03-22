@@ -1,0 +1,3 @@
+{
+  "app": "npx ts-node bin/world-chat-bot-infrastructure.ts"
+}

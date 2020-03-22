@@ -1,0 +1,19 @@
+{
+  "name": "world-chat-bot",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/bot.ts"
+  },
+  "author": "shahab96@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
