@@ -5,8 +5,8 @@
     "bootstrap": "lerna bootstrap"
   },
   "devDependencies": {
-    "aws-sdk": "^2.596.0",
-    "lerna": "^3.19.0"
+    "aws-sdk": "^2.643.0",
+    "lerna": "^3.20.2"
   },
   "dependencies": {}
 }
