@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node ./src/bot.ts"
+    "start": "ts-node ./src/bot.ts",
+    "build": "tsc"
   },
   "author": "shahab96@gmail.com",
   "license": "ISC",
