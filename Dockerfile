@@ -1,6 +1,7 @@
 FROM node:12.14
 
 COPY ./dist .
-COPY ./node_modules ./node_modules
+COPY ./package.json .
+RUN npm install
 
 CMD node ./bot.js
