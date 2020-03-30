@@ -1,12 +1,19 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "world-chat-bot",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "bootstrap": "lerna bootstrap"
+    "start": "ts-node ./src/bot.ts"
   },
+  "author": "shahab96@gmail.com",
+  "license": "ISC",
   "devDependencies": {
-    "aws-sdk": "^2.643.0",
-    "lerna": "^3.20.2"
+    "@types/node": "^12.12.30",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "discord.js": "^11.6.3"
+  }
 }

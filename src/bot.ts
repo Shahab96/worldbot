@@ -4,10 +4,6 @@ import {
   TextChannel,
 } from "discord.js";
 import {
-  SecretsManager,
-  AWSError,
-} from "aws-sdk";
-import {
   getAppConfig,
   AppConfig,
   Server,
@@ -54,17 +50,7 @@ export class WorldChatBot {
       }
     });
 
-    new SecretsManager().getSecretValue({
-      SecretId: "WorldChatBotToken",
-    }, (err: AWSError, data: SecretsManager.GetSecretValueResponse) => {
-      if (err) {
-        throw err;
-      }
-
-      const { Token } = JSON.parse(data.SecretString!);
-
-      this.bot.login(Token);
-    });
+    this.bot.login(process.env.TOKEN);
   }
 
   private async dispatch(source: Server, message: Message, appConfig: AppConfig) {
