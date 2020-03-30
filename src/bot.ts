@@ -4,12 +4,10 @@ import {
   TextChannel,
 } from "discord.js";
 import {
-  getAppConfig,
+  appConfig,
   AppConfig,
   Server,
 } from "./appConfig";
-
-let appConfig: AppConfig;
 
 export class WorldChatBot {
   private static bot: WorldChatBot;
@@ -32,7 +30,6 @@ export class WorldChatBot {
         "READ_MESSAGES",
         "MANAGE_MESSAGES",
       ]);
-      appConfig = await getAppConfig();
       console.log(link);
     });
 
