@@ -55,7 +55,6 @@ export class WorldChatBot {
     const destinationChannels: TextChannel[] = [];
     destinationServers.forEach((server) => {
       const guild = this.bot.guilds.get(server.id)!;
-      console.log(guild.id);
       const channel = guild?.channels.get(server.channel);
       if (channel?.type === "text") {
         destinationChannels.push(channel as TextChannel);
