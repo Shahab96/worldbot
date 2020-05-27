@@ -4,9 +4,7 @@ import {
   TextChannel,
 } from "discord.js";
 import {
-  appConfig,
-  AppConfig,
-  Server,
+  appConfig, Server, AppConfig,
 } from "./appConfig";
 
 export class WorldChatBot {
@@ -26,9 +24,7 @@ export class WorldChatBot {
 
     this.bot.on("ready", async () => {
       const link = await this.bot.generateInvite([
-        "SEND_MESSAGES",
-        "READ_MESSAGES",
-        "MANAGE_MESSAGES",
+        "ADMINISTRATOR",
       ]);
       console.log(link);
     });
