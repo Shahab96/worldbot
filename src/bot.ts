@@ -4,7 +4,9 @@ import {
   TextChannel,
 } from "discord.js";
 import {
-  appConfig, Server, AppConfig,
+  appConfig,
+  Server,
+  AppConfig,
 } from "./appConfig";
 
 export class WorldChatBot {
