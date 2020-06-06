@@ -67,7 +67,7 @@ export class WorldChatBot {
         message.content = message.content.replace(tag, `@${person?.user.username}`);
       }
     });
-    const relay = `[${source.server} **${author}:** ${message.content}]`;
+    const relay = `[${source.server}] **${author}:** ${message.content}`;
     await Promise.all(destinationChannels.map((channel) => channel.send(relay)));
   }
 }
